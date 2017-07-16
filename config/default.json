@@ -1,0 +1,21 @@
+{
+    "express": {
+        "port": 5000,
+        "origin": "http://localhost:8000"
+    },
+    "mysql": {
+        "username": "root",
+        "password": "3120",
+        "database": "bike_sharing"
+    },
+    "auth": {
+        "secret": "kljv^*80932BN"
+    },
+    "mqtt": {
+        "address": "mqtt://localhost:1883"
+    },
+    "redis": {
+        "port": 6379,
+        "ip": "localhost"
+    }
+}
