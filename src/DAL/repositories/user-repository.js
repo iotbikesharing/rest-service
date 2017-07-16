@@ -1,20 +1,17 @@
 const User = require('../models/user')
+const baseRepo = require('./base-repository')
 
 class UserRepository {
-    findWithCondition(condition) {
-        return User.findAll({
-            where: condition
-        })
+    checkUserAvailability(condition) {
+        return baseRepo.findWithCondition(User, condition)
     }
 
     createNewUser(data) {
-        return User.create(data)
+        return baseRepo.create(User, data)
     }
 
-    findOne(condition) {
-        return User.findOne({
-            where: condition
-        })
+    findUserByNameOrEmail(condition) {
+        return baseRepo.findOne(User, condition)
     }
 }
 

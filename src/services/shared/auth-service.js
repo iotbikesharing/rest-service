@@ -12,7 +12,7 @@ class AuthService {
         return new Promise((resolve, reject) => {
             /** Check if username exists */
             const condition = { $or: [{ username: body.username }, { email: body.email }] }
-            userRepo.findWithCondition(condition).then(users => {
+            userRepo.checkUserAvailability(condition).then(users => {
                 if (users.length > 0) {
                     value.message = 'Username/Email is already taken. Please try again!'
                     reject(value)
@@ -43,7 +43,7 @@ class AuthService {
         const condition = { $or: [{ username: body.username }, { email: body.username }] }
         return new Promise((resolve, reject) => {
             /** Check if username exists */
-            userRepo.findOne(condition).then(user => {
+            userRepo.findUserByNameOrEmail(condition).then(user => {
                 if (!user) {
                     /** Username not found */
                     value.message = constants.ERROR_MESSAGE
