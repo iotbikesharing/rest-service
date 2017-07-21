@@ -11,6 +11,9 @@ module.exports = sequelize.define('User',
         },
         password: {
             type: Sequelize.STRING
+        },
+        nfc_id: {
+            type: Sequelize.STRING
         }
     }, {
         tableName: 'users'
