@@ -6,7 +6,8 @@
     "mysql": {
         "username": "root",
         "password": "3120",
-        "database": "bike_sharing"
+        "database": "bike_sharing",
+        "host": "localhost"
     },
     "auth": {
         "secret": "kljv^*80932BN"

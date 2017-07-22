@@ -6,7 +6,7 @@ module.exports = new Sequelize(
     config.get('mysql.username'),
     config.get('mysql.password'),
     {
-        host: 'localhost',
+        host: config.get('mysql.host'),
         dialect: 'mysql',
 
         pool: {

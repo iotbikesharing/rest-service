@@ -6,16 +6,13 @@
     "mysql": {
         "username": "root",
         "password": "3120",
-        "database": "bike-sharing"
+        "database": "bike-sharing",
+        "host": "mysql"
     },
     "auth": {
         "secret": "kljv^*80932BN"
     },
     "mqtt": {
         "address": "mqtt://ec2-54-169-8-171.ap-southeast-1.compute.amazonaws.com:1883"
-    },
-    "redis": {
-        "port": 6379,
-        "ip": "env-monitor.0a537l.ng.0001.apse1.cache.amazonaws.com"
     }
 }
