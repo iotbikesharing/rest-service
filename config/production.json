@@ -1,14 +1,14 @@
 {
     "express": {
-        "port": 3000,
+        "port": 5000,
         "origin": "https://rmit-env-monitor.github.io"
     },
     "mysql": {
         "username": "root",
         "password": "3120",
-        "database": "bike-sharing",
+        "database": "bike_sharing",
         "host": "mysql"
-    },
+},
     "auth": {
         "secret": "kljv^*80932BN"
     },
