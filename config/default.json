@@ -14,9 +14,5 @@
     },
     "mqtt": {
         "address": "mqtt://localhost:1883"
-    },
-    "redis": {
-        "port": 6379,
-        "ip": "localhost"
     }
 }

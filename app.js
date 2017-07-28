@@ -15,6 +15,7 @@ const tokenCheck = require('./src/middlewares/token-check-middleware')
 
 /** Routing */
 const sharedRoutes = require('./src/routes/shared')
+require('./src/routes/subcriber')()
 
 app.set('port', (process.env.PORT || config.get('express.port')))
 app.options('*', cors())

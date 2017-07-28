@@ -8,11 +8,11 @@
         "password": "3120",
         "database": "bike_sharing",
         "host": "mysql"
-},
+    },
     "auth": {
         "secret": "kljv^*80932BN"
     },
     "mqtt": {
-        "address": "mqtt://ec2-54-169-8-171.ap-southeast-1.compute.amazonaws.com:1883"
+        "address": "mqtt://broker:1883"
     }
 }
