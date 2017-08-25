@@ -6,7 +6,8 @@ const constants = require('../utilities/constants')
 
 module.exports = () => {
     client.on('connect', () => {
-        client.subscribe(constants.MQTT_STATION_DATA)
+        client.subscribe(constants.LORA_GPS)
+        client.subscribe(constants.RFID)
     })
 
     client.on('message', (topic, message) => {

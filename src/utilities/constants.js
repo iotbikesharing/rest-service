@@ -1,4 +1,5 @@
 module.exports = {
     ERROR_MESSAGE: 'Invalid authentication. Try again',
-    MQTT_STATION_DATA: 'station'
+    LORA_GPS: 'lora_gps',
+    RFID: 'rfid'
 }
