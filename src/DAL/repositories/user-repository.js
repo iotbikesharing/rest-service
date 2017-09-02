@@ -13,6 +13,10 @@ class UserRepository {
     findUserByNameOrEmail(condition) {
         return baseRepo.findOne(User, condition)
     }
+
+    findUserByRFID(condition) {
+        return baseRepo.findOne(User, condition)
+    }
 }
 
 module.exports = new UserRepository()

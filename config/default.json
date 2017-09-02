@@ -5,14 +5,14 @@
     },
     "mysql": {
         "username": "root",
-        "password": "3120",
+        "password": "root",
         "database": "bike_sharing",
-        "host": "localhost"
+        "host": "bikesharing-mysql"
     },
     "auth": {
         "secret": "kljv^*80932BN"
     },
     "mqtt": {
-        "address": "mqtt://localhost:1883"
+        "address": "mqtt://broker:1883"
     }
 }
