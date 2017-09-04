@@ -13,6 +13,6 @@
         "secret": "kljv^*80932BN"
     },
     "mqtt": {
-        "address": "mqtt://broker:1883"
+        "address": "mqtt://localhost:1883"
     }
 }
