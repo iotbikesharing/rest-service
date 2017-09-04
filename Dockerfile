@@ -1,14 +1,14 @@
-FROM node:boron
+FROM ubuntu:16.04
 
 # Create directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN apt-get install curl
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-RUN sudo apt-get update && sudo apt-get install yarn
-RUN apt-get install gcc
+RUN apt-get update
+RUN apt-get install -y curl
+RUN apt-get install -y gcc
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN sudo apt-get install -y nodejs
 
 # Install app dependencies
 COPY package.json /usr/src/app/
